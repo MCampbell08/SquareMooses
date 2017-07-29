@@ -74,6 +74,7 @@ body {
 
 .hustlerInfo h2, .adminInfo h2 {
     border-left: solid 3px black;
+    padding-left: 8px;
 }
 
 .submission {
