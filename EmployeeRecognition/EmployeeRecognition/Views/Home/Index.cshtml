@@ -66,43 +66,56 @@
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-        <h2>Application uses</h2>
-        <ul>
-            <li>Sample pages using ASP.NET Core MVC</li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
-            <li>Theming using <a href="https://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>How to</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Overview</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
-        </ul>
-    </div>
-    <div class="col-md-3">
-        <h2>Run & Deploy</h2>
-        <ul>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
-            <li><a href="https://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
-        </ul>
+    <div class="col-md-12 bord">
+        <form>
+            <div class="awardedTo">
+                <p>Who would you like to award?</p>
+                <input type="text" />
+            </div>
+            <div class="whyHustler">
+                <p>Why are they a hustler?</p>
+                <input type="checkbox" />
+            </div>
+            <div class="department">
+                <p>What is their department?</p>
+                <select name="departments">
+                    <option value="Production">Production</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="HumanResourceManagement">Human Resource management</option>
+                    <option value="Purchasing">Purchasing</option>
+                    <option value="AccountingAndFinance">Accounting and Finance</option>
+                    <option value="ResearchAndDevelopment">Research and Development</option>
+                </select>
+            </div>
+            <div class="location">
+                <p>What location are they at?</p>
+                <select name="location">
+                    <option value="draper">Draper, UT</option>
+                    <option value="provo">Provo, UT</option>
+                    <option value="sanclemente">San Clemente, CA</option>
+                </select>
+            </div>
+            <div class="date">
+                <p>Submission date?</p>
+                <input type="text" />
+            </div>
+            <div class="submittedBy">
+                <p>What's your name?</p>
+                <input type="text" />
+            </div>
+            <div class="email">
+                <p>What's your email?</p>
+                <input type="text" />
+            </div>
+            <div class="hustlerEmail">
+                <p>What is their email?</p>
+                <input type="text" />
+            </div>
+            <div class="reason">
+                <p>Reason for submission?</p>
+                <input type="text" />
+            </div>
+        </form>
+        <input type="submit" />
     </div>
 </div>
