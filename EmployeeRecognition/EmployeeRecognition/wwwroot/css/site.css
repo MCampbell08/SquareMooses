@@ -69,10 +69,33 @@ body {
 .hustlerInfo, .adminInfo {
     padding: 20px;
     margin: 0 auto;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 
-.hustlerInfo h2, .adminInfo h2 {
+.info .question p {
+    font-size:16px;
+    text-transform: lowercase;
+}
+
+.info .question input {
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.question {
+    padding-left: 8px;
+}
+
+.question:hover {
+    border-left: 3px solid #777;
+    color: #0098cf;
+}
+
+.question input:focus {
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+.infoHeader {
     border-left: solid 3px black;
     padding-left: 8px;
 }
