@@ -11,6 +11,17 @@
   <PropertyGroup>
     <UserSecretsId>aspnet-EmployeeRecognition-32d864ce-d2d8-41d9-863f-cd7f033a8953</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder1\**" />
+    <Compile Remove="NewFolder\**" />
+    <Content Remove="NewFolder1\**" />
+    <Content Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder1\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
@@ -32,10 +43,6 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.1" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.1" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-    <Folder Include="NewFolder\" />
   </ItemGroup>
 
 </Project>

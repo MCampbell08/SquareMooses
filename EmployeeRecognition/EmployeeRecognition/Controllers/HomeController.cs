@@ -10,7 +10,11 @@ namespace EmployeeRecognition.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("ProfilePageView", "Account");
+            }
+            return RedirectToAction("Login", "Account");
         }
 
         public IActionResult About()
