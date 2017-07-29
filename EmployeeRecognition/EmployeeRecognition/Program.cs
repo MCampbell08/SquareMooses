@@ -18,7 +18,7 @@ namespace EmployeeRecognition
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
                 .Build();
-
+                
             host.Run();
         }
     }
