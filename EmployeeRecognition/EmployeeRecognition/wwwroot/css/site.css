@@ -66,6 +66,10 @@ body {
     vertical-align: bottom;
 }
 
+#nomHustler {
+    margin-left: 8%;
+}
+
 .hustlerInfo, .adminInfo {
     padding: 20px;
     margin: 0 auto;
@@ -74,7 +78,7 @@ body {
 
 .info .question p {
     font-size:16px;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 .info .question input {
