@@ -68,6 +68,8 @@ body {
 
 #nomHustler {
     margin-left: 8%;
+    font-style: italic;
+    font-size: 25px;
 }
 
 .hustlerInfo, .adminInfo {
