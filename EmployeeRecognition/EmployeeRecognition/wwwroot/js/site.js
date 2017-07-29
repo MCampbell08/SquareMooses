@@ -1,17 +1,22 @@
 ﻿function run() {
-    checkNamesAndCity();
-    checkEmail();
-    checkDate();
+    var validNames = checkNames();
+    var validEmails = checkEmail();
+    var validDate = checkDate();
+    if (validNames && validEmails && validDate) {
+        console.log("all valid!");
+        location.reload();
+    } else {
+        console.log("not valid");
+    }
 }
 
-function checkNamesAndCity() {
+function checkNames() {
     var submitter_name = document.getElementById('submitterName').value;
     var hustler_name = document.getElementById('hustlerName').value;
     var sub_reason = document.getElementById('submissionReason').value;
-    var namesCityRegEx = new RegExp(".{2,}\s.+");
     var errorReturn = "";
 
-    if (namesCityRegEx.test(submitter_name)) {
+    if (/\w+\s.+/.test(submitter_name)) {
         document.getElementById("submitterName").style.boxShadow = "0 0 5px 1px green";
     }
     else {
@@ -19,14 +24,14 @@ function checkNamesAndCity() {
         errorReturn += "Invalid submitter name. Must have at least 2 letters followed by a space and at least 1 more letter.</br>"
     }
 
-    if (namesCityRegEx.test(hustler_name)) {
+    if (/\w+\s.+/.test(hustler_name)) {
         document.getElementById("hustlerName").style.boxShadow = "0 0 5px 1px green";
     }
     else {
         document.getElementById("hustlerName").style.boxShadow = "0 0 5px 1px red";
         errorReturn += "Invalid hustler name. Must have at least 2 letters followed by a space and at least 1 more letter.</br></br>"
     }
-    if (namesCityRegEx.test(sub_reason)) {
+    if (/\w+\s.+/.test(sub_reason)) {
         document.getElementById("submissionReason").style.boxShadow = "0 0 5px 1px green";
     }
     else {
@@ -34,6 +39,12 @@ function checkNamesAndCity() {
         errorReturn += "Submission reason must contain content.";
     }
     document.getElementById("nameErrors").innerHTML = errorReturn;
+
+    if (/\w+\s.+/.test(submitter_name) && /\w+\s.+/.test(hustler_name) && /\w+\s.+/.test(sub_reason)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function checkEmail() {
@@ -54,6 +65,12 @@ function checkEmail() {
         errorReturn += "Invalid hustler email.";
     }
     document.getElementById("emailErrors").innerHTML = errorReturn;
+
+    if (emailRegex.test(submitter_email) && emailRegex.test(hustler_email)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 function checkDate() {
@@ -62,9 +79,11 @@ function checkDate() {
     var errorReturn = "";
     if (dateRegex.test(subDate)) {
         document.getElementById("submissionDate").style.boxShadow = "0 0 5px 1px green";
+        return true;
     } else {
         document.getElementById("submissionDate").style.boxShadow = "0 0 5px 1px red";
         errorReturn += "Invalid submission date. Please use the proper format.";
+        return false;
     }
     document.getElementById("dateErrors").innerHTML = errorReturn;
 }

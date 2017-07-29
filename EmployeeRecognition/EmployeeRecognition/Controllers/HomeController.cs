@@ -17,14 +17,14 @@ namespace EmployeeRecognition.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        public IActionResult About()
+        public IActionResult Review()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Drawing()
         {
             ViewData["Message"] = "Your contact page.";
 
