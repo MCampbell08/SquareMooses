@@ -126,6 +126,7 @@ body {
 
 #submit:hover {
     box-shadow: 13px 13px 13px -10px rgba(0,0,0,0.75);
+    transform: translateX(5px);
 }
 
 hr {
