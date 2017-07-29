@@ -172,6 +172,34 @@ textarea {
     width: 100%;
 }
 
+footer {
+    background-color: #474747;
+    height: auto;
+    box-shadow: inset -1px 17px 51px -8px rgba(0,0,0,0.75);
+    color: lightgray;
+    padding: 30px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.leftSide, .rightSide {
+    display: inline-block;
+}
+
+.leftSide h4 {
+    border-bottom: solid 1px lightGray;
+    padding-bottom: 7px;
+}
+
+.rightSide {
+    float: right;
+    padding-right: 40px;
+}
+
+.leftSide {
+    padding-left: 40px;
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
