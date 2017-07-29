@@ -3,7 +3,6 @@
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-
 }
 
 /* Wrapping element */
@@ -14,16 +13,64 @@
 }
 
 .bord {
-    border-top: solid 24px black;
-    border-bottom: solid 24px black;
+    border-top: solid 24px #333;
+    border-bottom: solid 24px #333;
+    padding: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navigation {
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.navigation li a {
+    color: black;
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 3px;
+}
+
+.navigation li a:hover {
+    color: #BD081C;
+    text-decoration: none;
+    border-bottom: 3px solid black;
 }
 
 .logo {
     text-align: center;
+    padding-top: 10px;
 }
 
 .logo h3 {
     display: inline-block;
+    color: #0098cf;
+    font-size: 25px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.logo img {
+    width: 45px;
+    vertical-align: bottom;
+}
+
+.hustlerInfo, .adminInfo {
+    padding: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -37,6 +84,10 @@ textarea {
 .carousel-caption p {
     font-size: 20px;
     line-height: 1.4;
+}
+
+#myCarousel {
+    border-top: 5px solid #333;
 }
 
 /* buttons and links extension to use brackets: [ click me ] */
