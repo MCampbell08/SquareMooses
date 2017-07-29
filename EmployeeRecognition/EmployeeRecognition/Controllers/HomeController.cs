@@ -12,7 +12,7 @@ namespace EmployeeRecognition.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                return RedirectToAction("ProfilePageView", "Account");
+                return View();
             }
             return RedirectToAction("Login", "Account");
         }
