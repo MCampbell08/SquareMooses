@@ -66,15 +66,11 @@
 </div>
 
 <div class="row bord">
-    <div class="col-md-2"></div>
-    <div class="col-md-4">
-        <div class="adminInfo">
-            <h2>Your information</h2>
-            <form>
-                <div class="date">
-                    <p>Submission date?</p>
-                    <input type="text" />
-                </div>
+    <form>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <div class="adminInfo">
+                <h2>Your information</h2>
                 <div class="submittedBy">
                     <p>What's your name?</p>
                     <input type="text" />
@@ -83,49 +79,59 @@
                     <p>What's your email?</p>
                     <input type="text" />
                 </div>
-                <div class="reason">
-                    <p>Reason for submission?</p>
+                <div class="date">
+                    <p>Submission date?</p>
                     <input type="text" />
                 </div>
-            </form>
+                <div class="reason">
+                    <p>Reason for your submission?</p>
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="hustlerInfo">
+                <h2>The hustler's information</h2>
+                <div class="awardedTo">
+                    <p>Who would you like to award?</p>
+                    <input type="text" />
+                </div>
+                <div class="whyHustler">
+                    <p>Why are they a hustler?</p>
+                    <input type="checkbox" />
+                </div>
+                <div class="department">
+                    <p>What is their department?</p>
+                    <select name="departments">
+                        <option value="Production">Production</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="HumanResourceManagement">Human Resource Management</option>
+                        <option value="Purchasing">Purchasing</option>
+                        <option value="AccountingAndFinance">Accounting and Finance</option>
+                        <option value="ResearchAndDevelopment">Research and Development</option>
+                    </select>
+                </div>
+                <div class="location">
+                    <p>What location are they at?</p>
+                    <select name="location">
+                        <option value="draper">Draper, UT</option>
+                        <option value="provo">Provo, UT</option>
+                        <option value="sanclemente">San Clemente, CA</option>
+                    </select>
+                </div>
+                <div class="hustlerEmail">
+                    <p>What is their email?</p>
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="submission">
             <input type="submit" />
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="hustlerInfo">
-            <h2>The hustler's information</h2>
-            <div class="awardedTo">
-                <p>Who would you like to award?</p>
-                <input type="text" />
-            </div>
-            <div class="whyHustler">
-                <p>Why are they a hustler?</p>
-                <input type="checkbox" />
-            </div>
-            <div class="department">
-                <p>What is their department?</p>
-                <select name="departments">
-                    <option value="Production">Production</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="HumanResourceManagement">Human Resource Management</option>
-                    <option value="Purchasing">Purchasing</option>
-                    <option value="AccountingAndFinance">Accounting and Finance</option>
-                    <option value="ResearchAndDevelopment">Research and Development</option>
-                </select>
-            </div>
-            <div class="location">
-                <p>What location are they at?</p>
-                <select name="location">
-                    <option value="draper">Draper, UT</option>
-                    <option value="provo">Provo, UT</option>
-                    <option value="sanclemente">San Clemente, CA</option>
-                </select>
-            </div>
-            <div class="hustlerEmail">
-                <p>What is their email?</p>
-                <input type="text" />
-            </div>
-        </div>
-    </div>
-    <div class="col-md-2"></div>
+    
 </div>
+
+
