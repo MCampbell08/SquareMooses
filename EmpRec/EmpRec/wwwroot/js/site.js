@@ -79,11 +79,12 @@ function checkDate() {
     var errorReturn = "";
     if (dateRegex.test(subDate)) {
         document.getElementById("submissionDate").style.boxShadow = "0 0 5px 1px green";
+        document.getElementById("dateErrors").innerHTML = errorReturn;
         return true;
     } else {
         document.getElementById("submissionDate").style.boxShadow = "0 0 5px 1px red";
         errorReturn += "Invalid submission date. Please use the proper format.";
+        document.getElementById("dateErrors").innerHTML = errorReturn;
         return false;
     }
-    document.getElementById("dateErrors").innerHTML = errorReturn;
 }
