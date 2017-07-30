@@ -204,6 +204,50 @@ footer {
     padding-bottom: 20px;
 }
 
+.prizes {
+    border: 3px solid #333;
+    padding: 10px;
+}
+
+#prize {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#prize #single:hover {
+    color: #0098cf;
+}
+
+#headerPrizes {
+    padding-bottom: 8px;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.submissionPg {
+    border: solid 3px #333;
+    padding: 15px;
+    font-size: 18px;
+    margin: 8px;
+}
+
+.submissionPg button {
+    margin: 0 auto;
+    height: 50px;
+    box-shadow: 9px 11px 34px -10px rgba(0,0,0,0.75);
+    width: 50%;
+    background-color: #0098cf;
+    color: white;
+}
+
+.submissionPg button:hover {
+    box-shadow: 13px 13px 13px -10px rgba(0,0,0,0.75);
+    transform: translateX(5px);
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */

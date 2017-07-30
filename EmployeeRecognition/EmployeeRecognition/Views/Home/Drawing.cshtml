@@ -1,13 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Drawing";
+    ViewData["Title"] = "The Drawing";
 }
 
-<div class="container-fluid bord">
+<div class="container-fluid bord" ng-app>
     <div class="container loginRegSection">
         <h2>@ViewData["Title"].</h2>
-        <h3>@ViewData["Message"]</h3>
-
-        <p>Use this area to provide additional information.</p>
+        <h3 id="headerPrizes">@ViewData["Message"]</h3>
+        <div class="prizes" ng-init="names={'XBox One':{'name' : 'Xbox One', 'value': '123.45', 'description':'A brand new, limited edition XBox One!'},'Dodge Challenger':{'name' : 'Dodge Challenger', 'value': '25003.45', 'description':'Picture yourself in a brand new, 2017 Dodge Challenger. You will look good, we promise.'},'A snake':{'name' : 'A snake', 'value': '1223.45', 'description':'No description necessary.'}, '65 inch Sony Flat Screen':{'name' : '65 inch Sony Flatscreen TV', 'value': '1123.45', 'description':'You will want to spend hours in front of this screen!'}}">
+            <div id="prize" data-ng-repeat="prize in names">
+                <p id="single">{{ prize.name }}</p>
+                <p class="desc">{{ prize.description }}</p>
+            </div>
+        </div>
     </div>
 </div>
-

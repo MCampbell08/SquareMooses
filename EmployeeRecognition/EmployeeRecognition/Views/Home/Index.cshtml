@@ -90,11 +90,11 @@
                 </div>
                 <div class="question">
                     <p>What's your email?</p>
-                    <input id="submitterEmail" type="text" />
+                    <input id="submitterEmail" type="text" value="@User.Identity.Name"/>
                 </div>
                 <div class="question">
                     <p>Submission date? (XX/XX/XXXX format)</p>
-                    <input id="submissionDate" type="text" />
+                    <input id="submissionDate" type="text" value="@DateTime.Today.Date.ToString("MM/dd/yyyy")"/>
                 </div>
                 <div class="question">
                     <p>Reason for your submission?</p>

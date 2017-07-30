@@ -10,23 +10,24 @@ namespace EmployeeRecognition.Controllers
     {
         public IActionResult Index()
         {
-            if (User.Identity.IsAuthenticated)
-            {
+            //if (User.Identity.IsAuthenticated)
+            //{
                 return View();
-            }
-            return RedirectToAction("Login", "Account");
+            //}
+            //return RedirectToAction("Login", "Account");
         }
 
         public IActionResult Review()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "These are the nominated hustlers.";
 
             return View();
         }
 
         public IActionResult Drawing()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Try your luck at these prizes..";
+            ViewData["Prizes"] = new string[] { "XBox One", "Dodge Challenger", "Amazon Giftcard", "A snake", "Marshmallows", "One dollar" };
 
             return View();
         }
