@@ -66,11 +66,7 @@ function checkEmail() {
     }
     document.getElementById("emailErrors").innerHTML = errorReturn;
 
-    if (emailRegex.test(submitter_email) && emailRegex.test(hustler_email)) {
-        return true;
-    } else {
-        return false;
-    }
+    return (emailRegex.test(submitter_email) && emailRegex.test(hustler_email));
 }
 
 function checkDate() {
